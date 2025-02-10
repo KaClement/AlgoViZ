@@ -1,0 +1,29 @@
+# 🔹 Node.js (Frontend)
+node_modules/
+dist/
+.vite/
+
+# 🔹 ASP.NET Core (Backend)
+bin/
+obj/
+*.db
+*.log
+
+# 🔹 Visual Studio
+.vscode/
+*.suo
+*.user
+*.rsuser
+*.cache
+*.pdb
+*.tmp
+*.ide
+.DS_Store
+
+# 🔹 Environment files (Sensitive Data)
+.env
+.env.local
+.env.development
+.env.production
+.vs/
+.vscode/

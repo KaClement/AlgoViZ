@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35707.178 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlgoPathfinderProject.Server", "AlgoPathfinderProject.Server\AlgoPathfinderProject.Server.csproj", "{7AEE5157-B0E2-45C7-B913-0E2B43749F15}"
+EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "algopathfinderproject.client", "algopathfinderproject.client\algopathfinderproject.client.esproj", "{70B6A8C1-B47E-4A6E-9FDB-FE01BD357201}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7AEE5157-B0E2-45C7-B913-0E2B43749F15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AEE5157-B0E2-45C7-B913-0E2B43749F15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AEE5157-B0E2-45C7-B913-0E2B43749F15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AEE5157-B0E2-45C7-B913-0E2B43749F15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70B6A8C1-B47E-4A6E-9FDB-FE01BD357201}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70B6A8C1-B47E-4A6E-9FDB-FE01BD357201}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70B6A8C1-B47E-4A6E-9FDB-FE01BD357201}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{70B6A8C1-B47E-4A6E-9FDB-FE01BD357201}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70B6A8C1-B47E-4A6E-9FDB-FE01BD357201}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70B6A8C1-B47E-4A6E-9FDB-FE01BD357201}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
