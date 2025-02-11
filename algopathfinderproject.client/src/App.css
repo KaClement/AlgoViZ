@@ -1,11 +1,186 @@
-﻿#root {
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 2rem;
-    text-align: center;
+﻿@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+
+
+
+* {
+    box-sizing: border-box;
 }
 
-th, td {
-    padding-left: 1rem;
-    padding-right: 1rem;
+body {
+    background-color: #2D2E46;
+    margin: 0;
+    height: 100%;
+    padding: 0;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Makes sure the app fills the whole screen */
+}
+
+/* ✅ Ensure the visualization box takes available space */
+.main-content {
+    flex: 1; /* This makes sure the content expands to push the footer down */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* -------- NAVBAR -------- */
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    position: relative;
+    background: transparent; 
+}
+
+
+.site-title {
+    position: absolute;
+    left: 2%;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Orbitron', sans-serif;
+    text-transform: uppercase;
+    letter-spacing:2px;
+}
+
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    padding: 0;
+}
+
+
+    .nav-links li {
+        display: inline;
+    }
+
+        .nav-links li a {
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: #ffffff;
+            font-family: 'Poppins', sans-serif; 
+            transition: color 0.3s ease-in-out;
+        }
+
+            .nav-links li a:hover {
+                color: #F8C471; 
+            }
+
+
+.menu-toggle {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+}
+
+
+
+
+
+/* -------- VizBox -------- */
+
+.visualization-box {
+    width: 70%; /* Decent size */
+    height: 500px; /* Adjust based on needs */
+    margin: 5% 5%; /* Centering the box */
+    background: rgba(255, 255, 255, 0.1); /* Subtle transparent background */
+    border-radius: 10px; /* Rounded edges */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white; /* White text for contrast */
+    font-family: "Poppins", sans-serif;
+}
+
+/* -------- Footer -------- */
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 0%;
+    background: rgba(255, 255, 255, 0.1);
+    font-size: 0.9rem; /* Make text slightly smaller */
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+
+.tech-logos {
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+    margin-top: 1%;
+}
+
+    .tech-logos img {
+        width: 2.5%; /* Adjust size */
+        height: 2.5%;
+        transition: transform 0.3s ease-in-out;
+    }
+
+        .tech-logos img:hover {
+            transform: scale(1.2); /* Slight zoom effect on hover */
+        }
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .nav {
+        justify-content: space-between;
+        padding: 10px 20px;
+    }
+
+    .menu-toggle {
+        display: block; 
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); 
+    }
+
+    .nav-links {
+        display: none; 
+        flex-direction: column;
+        position: absolute;
+        top: 160%; 
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: rgba(255, 255, 255, 0.1);
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+        .nav-links.open {
+            display: flex; 
+        }
+
+        .nav-links li {
+            padding: 10px 0;
+        }
 }
