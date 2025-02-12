@@ -7,22 +7,6 @@ namespace AlgoPathfinderProject.Server.Services.Sorting
         public List<T> Sort(List<T> Liste)
         {
 
-            try{
-
-                for(int i = 0; i < Liste.Count() - 1; i=+1)
-                {
-                   // another for loop.
-                }
-            
-            
-            
-            }catch (Exception ex) { 
-            
-            
-            
-            }
-
-
 
             throw new NotImplementedException();
         }
