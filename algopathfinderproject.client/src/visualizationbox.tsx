@@ -4,10 +4,9 @@ import "./App.css"; // Import the CSS for styling
 
 export default function visualizationbox() {
   return (
-        <div className="visualization-box">
-            <h2>Algorithm Visualization</h2>
-            <p>Select an algorithm to start the visualization.</p>
-            {/* The sorting or pathfinding animation will go here */}
-        </div>
+      <div className="visualization-box">
+          <h2>Welcome to AlgoViZ</h2>
+          <p>Visualize Sorting and Pathfinding algorithms in action!</p>
+      </div>
   );
 };

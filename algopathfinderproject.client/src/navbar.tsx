@@ -6,15 +6,12 @@ export default function Navbar() {
 
     return (
         <nav className="nav">
-            {/* Site Title */}
             <a href="\" className="site-title">AlgoViZ</a>
 
-            {/* Mobile Menu Toggle Button */}
             <button className="menu-toggle" onClick={() => setIsOpen(!isOpen)}>
-                &#9776;  {/* Unicode alternative */}
+                &#9776;  
             </button>
 
-            {/* Navigation Links */}
             <ul className={isOpen ? "nav-links open" : "nav-links"}>
                 <li>
                     <a href="/Sorting_Algorithm">Sorting Algorithm</a>
